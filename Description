@@ -1,0 +1,36 @@
+# React E-Commerce Website
+
+A modern, responsive e-commerce web application created with the assistance of **Google AI Studio** and customized, deployed, and maintained by me. The project demonstrates modern frontend development practices, REST API integration, responsive UI design, cloud deployment, and version control.
+
+## 🚀 Features
+
+* Responsive design for mobile, tablet, and desktop
+* Product listing and product details
+* Search functionality
+* Shopping cart management
+* REST API integration
+* Component-based React architecture
+* Clean and modern UI
+* Cross-browser compatibility
+
+## 🛠️ Tech Stack
+
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* React Router
+* REST APIs
+* Git & GitHub
+* Google Cloud Run
+
+## 👨‍💻 My Contributions
+
+* Customized and refined the generated application.
+* Integrated and configured REST APIs.
+* Improved the UI/UX and responsiveness.
+* Tested functionality and fixed issues.
+* Managed source code with Git and GitHub.
+* Deployed the application on Google Cloud Run.
+
+> **Note:** The initial project structure was generated with assistance from Google AI Studio. The application was customized, configured, tested, and deployed by me as part of my frontend development portfolio.
