@@ -1,0 +1,6 @@
+{
+  "name": "Luxe Store",
+  "description": "A premium modern luxury e-commerce platform styled with a bespoke Elegant Dark theme. Integrated with the DummyJSON API and featuring full catalog browsing, real-time filtering, a robust cart and wishlist, local authentication, and animated route transitions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

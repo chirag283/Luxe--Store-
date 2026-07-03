@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  
+  /* Map elegant dark colors into existing gray palette */
+  --color-gray-950: #0a0a0c;
+  --color-gray-900: #121215;
+  --color-gray-800: #16161a;
+  --color-gray-700: #22222a;
+  --color-gray-600: #3a3a45;
+  --color-gray-500: #5c5d6e;
+  --color-gray-400: #8a8c9e;
+  --color-gray-300: #c2c4d6;
+  --color-gray-200: #e2e4f0;
+  --color-gray-100: #f1f3f9;
+  --color-gray-5: #f8f9fc;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white dark:bg-[#0a0a0c] text-gray-900 dark:text-[#f8fafc] transition-colors duration-300;
+  }
+  
+  html.dark body {
+    background-color: #0a0a0c;
+    background-image: radial-gradient(circle at top right, #15113d 0%, #0a0a0c 60%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+  
+  /* Glowing custom selection */
+  ::selection {
+    background-color: rgba(99, 102, 241, 0.3);
+    color: #ffffff;
+  }
+}
+
+/* Glassmorphism & Elegant Utility Classes */
+@utility glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@utility glass-card {
+  background: rgba(22, 22, 26, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+@utility text-glow-indigo {
+  text-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+}
+
+@utility border-glow-indigo {
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.15);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+@utility shadow-neon {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Custom Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #0a0a0c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.4);
+}
